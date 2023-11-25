@@ -1,0 +1,327 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.name_logo{
+    display: flex;
+    justify-content: space-between;
+    padding:0.5rem  3rem;
+    align-items: center;
+}
+.name_logo h4{
+    font-weight: bold;
+}
+.name_logo img{
+    width: 15rem;
+    cursor: pointer;
+}
+.container-fluid button{
+    position: relative;
+    left: 90%;
+}
+.navbar-nav{
+    margin: 1rem 0;
+}
+.navbar-nav ul{
+    display: flex;
+    justify-content: start;
+}
+a, a:hover {
+    color: #000;
+    text-decoration: none;
+}
+.navbar-nav li{
+    cursor: pointer;
+    list-style-type: none;
+    margin: 0rem 2rem;
+    font-family:'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    
+}
+.navbar-nav li:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 4px;
+    width: 0;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+.navbar-nav li:hover:after {
+    width: 100%;
+    background: rgb(255, 187, 1);
+}
+.home_container{
+    position: relative;
+    
+}
+.home_container img{
+    width: 100%;
+    height: 81vh;
+    background-size: cover;
+    filter: brightness(0.4);
+}
+.top-left {
+    position: absolute;
+    top: 4rem;
+    left: 2.2rem;
+}
+.top-left p{
+    color: yellow;
+    font-size: 2rem;
+    filter: drop-shadow(5px 5px 10px rgb(78, 92, 0));
+}
+.top-right {
+    position: absolute;
+    top: 0rem;
+    right: 5rem;
+}
+.top-right h1{
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 1rem;
+    font-size: 4rem;
+    letter-spacing: 5px;
+    color: orange;
+    filter: drop-shadow(1px 1px 3px rgb(133, 90, 90));
+}
+.info_content{
+    background: #cacaca;
+    margin:-0.3rem 0.5rem;
+    border-radius: 5px;
+    padding: 0.4rem;
+    margin-bottom: 2rem;
+}
+
+.about_container{
+    display: flex;
+    gap: 0.7rem;
+    padding: 1rem;
+    
+}
+.about_container aside{
+    width: 90%;
+    background: #000;
+    color: white;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding:0  10px;
+}
+
+.about_container aside img{
+    width: 15rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+.about_container aside h1{
+    /* text-align: center; */
+    margin-bottom: 0.3rem;
+}
+.about_container aside p{
+    text-transform: lowercase;
+    margin-bottom: 1rem;
+}
+.about_container aside .social_icons{
+    margin: 1.5rem 0.2rem;
+    display: flex;
+    justify-content: space-around;
+}
+.about_container aside .social_icons i{
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+main{
+    padding: 1rem;  
+    background: #242323;
+    color: whitesmoke;
+    border-radius: 5px;
+}
+main h1{
+    color:rgb(47, 253, 6)
+}
+main h6{
+    font-size: 2rem;
+}
+main p{
+    padding: 1rem;
+    width: 80%;
+    font-size: 1.2rem;
+    text-indent: 7rem;
+    font-family: 'Poppins', sans-serif;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+    align-items: center;
+}
+.title h4{
+    font-weight: bold;
+}
+.title i{
+    font-size: 1.5rem;
+}
+.project_box, .skills_box {
+    padding: 2rem;
+    border-radius: 5px;
+    margin:0.5rem  1rem;
+    background: #242323;
+    color: #fff;
+    text-align: center;
+    align-items: center;
+}
+
+.project img{
+    cursor: pointer;
+    width: 4.5rem;
+}
+.project h4{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.project_box, .about_container, .skills_box {
+    filter: drop-shadow(0px 0px 6px #000);
+}
+
+.skills_box img{
+    width: 5rem;
+    cursor: pointer;
+    /* filter: drop-shadow(0px 0px 2px #000); */
+}
+
+.resume_info img{
+    width: 90vw;
+    margin-bottom: 3rem;
+    margin-left: 4rem;
+    /* position: absolute; */
+
+}
+.resume_info h1{
+    text-align: center;
+    color: #000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.btn_donwload {
+    display: flex;
+    justify-content: center;
+    /* gap: 0.5rem;*/
+    /* background: none; */
+    position: relative;
+    left: 55%;      
+    /* top:  0rem; */
+    bottom: 15rem;
+    border: none;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 15px;
+    width: 17rem;
+    padding: 1.1rem;
+    background: blue;
+    align-items: center;
+}
+
+.btn_donwload span {
+display: block;
+margin-left: 0.3rem;
+transition: all 0.3s ease-in-out;
+}
+
+.btn_donwload svg {
+display: block;
+transform-origin: center center;
+transition: transform 0.3s ease-in-out;
+}
+
+.btn_donwload:hover {
+background: #000;
+}
+
+.btn_donwload:hover .svg-wrapper {
+transform: scale(1.5);
+transition: .5s linear;
+}
+
+.btn_donwload:hover svg {
+transform: translateX(2.6em) scale(1.1);
+fill: #fff;
+}
+
+.btn_donwload:hover span {
+opacity: 0;
+transition: .2s ease-out;
+}
+
+.btn_donwload:active {
+transform: scale(0.95);
+}
+
+.project_container h1{
+    text-align: center;
+    color: #000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+    
+#cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1rem;
+    gap: 2rem;
+    background: #00000031;
+}
+
+.card{
+    box-shadow: 0px 0px 7px #000;
+    width: 30rem;
+}
+
+.card-body h5{
+    font-weight: bold;
+}
+.card-body ul li{
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+.card-footer{
+    border: none;
+}
+.card-footer a{
+    width: 100%;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2rem;
+    background: blue;
+}
+#skill h1{
+    text-align: center;
+    color: #000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.skill_container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 1rem;
+}
+.box {
+    text-align: center;
+}
+.box .card{
+    width: 15rem;
+    padding: 1rem;
+}
+.box .card .card-img-top img{
+    width: 7rem;
+    margin-bottom: 0.5rem;
+}
+.box .card .card-footer{
+    border-radius: 5px;
+    background: #cacaca;
+}
